@@ -72,11 +72,17 @@ function App() {
         </p>
 
         <p id="author">- {author}</p>
-        <div className="button">
-        <a id="tweet-quote" className="btn" style={{backgroundColor: accentColor}} href={encodeURI(`http://www.twitter.com/intent/tweet?text=${quote} - ${author}`)}><img src={tweetIcon}/></a>
-        </div>
-        <button className="btn py-2" id="new-quote" style={{backgroundColor: accentColor}} onClick={()=> {getRandomQuote()}}>Change Quote</button>
+        <div className="container">
+        <div className="row">
         
+        <div className=" m-1 m-md-0 button col-12 col-md-6 d-flex justify-content-center">
+        <a id="tweet-quote" className="btn" target="_blank" style={{backgroundColor: accentColor}} href={encodeURI(`http://www.twitter.com/intent/tweet?text=${quote} - ${author}`)}><img src={tweetIcon}/></a>
+        </div>
+        <div className=" m-1 m-md-0 col-12 col-md-6 d-flex justify-content-center">
+        <button className="btn py-2" id="new-quote" style={{backgroundColor: accentColor}} onClick={()=> {getRandomQuote()}}>Change Quote</button>
+        </div>
+        </div>
+        </div>
         </div>
       </header>
       </div>

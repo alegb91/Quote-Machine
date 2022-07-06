@@ -5,8 +5,19 @@
     background-color: white;
     border-radius: 10px;
     color: black;
-    width: 50%;
+    width: 60%;
+
+    @media (max-width: 1200px) {
+      width: 70%;
+    }
+
+    @media (max-width: 800px) {
+      width: 80%;
+    }
   }
+
+ 
+
   .button{
   #tweet-quote{
     float: left;
@@ -35,9 +46,14 @@
   50% {
     opacity: 0;
   }
+
+ 
 }
 
-
+img {
+  height: 25px;
+  width: auto;
+} 
 
 
 
